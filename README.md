@@ -38,13 +38,25 @@ chmod +x <filename>
 ## Credits
 
 #### MAC
+##### Compile with 
+```
+swiftc -o clipboard-event-handler-mac clipboard-event-handler-mac.swift
+```
 * [apple/NSPasteboard](https://developer.apple.com/documentation/appkit/nspasteboard?language=occ)
 * [alecjacobson/Accessing clipboard (copy paste) from C++ program on Mac OS X](http://www.alecjacobson.com/weblog/?p=2376)
 * [Daemon-Devarshi/PasteboardWatcher.swift](https://gist.github.com/Daemon-Devarshi/13efd24f027a775ee862)
   
 #### Linux:
+##### Compile with 
+```
+gcc -o clipboard-event-handler-linux clipboard-event-handler-linux.c
+```
 * [stackoverflow/X11 Wait for and Get Clipboard Text](https://stackoverflow.com/a/44992967)
 
 #### Windows
+##### Compile with 
+```
+csc /out:clipboard-event-handler-win32.exe clipboard-event-handler-win32.cs
+```
 * [glombard/ClipboardNotification.cs](https://gist.github.com/glombard/7986317)
 * [stackoverflow/"Current thread must be set to single thread apartment (STA)" error in copy string to clipboard](https://stackoverflow.com/questions/17762037/error-while-trying-to-copy-string-to-clipboard)
